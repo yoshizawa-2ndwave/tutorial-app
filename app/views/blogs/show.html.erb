@@ -4,5 +4,9 @@
 
 <%= simple_format(@blog.body) %>
 
+<% @blog.comments.each do |comment| %>
+  <%= simple_format comment.body %>
+<% end %>
+
 <%= link_to 'Edit', edit_blog_path(@blog) %> |
 <%= link_to 'Back', blogs_path %>

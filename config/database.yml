@@ -19,10 +19,10 @@ default: &default
 
 development:
   <<: *default
-  host: 192.168.33.10
+  host: localhost
   database: tutorial_app_development
-  username: vagrant
-  password: developmentPassword4!
+  username: root
+  password: MyNewPassword4!
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
