@@ -2,7 +2,12 @@ ja:
   activerecord:
     models:
       blog: 記事
+      comment: コメント
     attributes:
       blog:
         title: タイトル
         body: 本文
+      comment:
+        body: コメント本文
+  labels:
+    comment_submit: コメント投稿

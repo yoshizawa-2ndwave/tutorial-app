@@ -1,11 +1,8 @@
 class CommentsController < ApplicationController
   def create
     @comment = Comment.new(comment_params)
-    if @comment.save
-      render :index
-    else
-      render :index
-    end
+    @comment.save
+    render :index
   end
 
   private
