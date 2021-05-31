@@ -13,5 +13,6 @@
 #  index_comments_on_blog_id  (blog_id)
 #
 class Comment < ApplicationRecord
+  validates :body, presence: true, length: { minimum: 1, maximum: 100 }
   belongs_to :blog
 end
