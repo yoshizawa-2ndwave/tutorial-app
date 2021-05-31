@@ -4,8 +4,8 @@
 
 <%= simple_format(@blog.body) %>
 
-<% @blog.comments.each do |comment| %>
-  <%= simple_format comment.body %>
+<%= tag.div id: :comments_area do %>
+  <%= render partial: "comments/index", locals: { comments: @blog.comments } %>
 <% end %>
 
 <%= link_to 'Edit', edit_blog_path(@blog) %> |
